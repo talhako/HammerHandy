@@ -1,60 +1,128 @@
 :root {
   --blue: #0059b3;
   --yellow: #ffd700;
+  --bg: #f8f8f8;
+  --text: #333;
   --dark-bg: #121212;
-  --light-bg: #f9f9f9;
-  --text-dark: #ffffff;
+  --light: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: all 0.3s ease;
 }
 
 .dark-mode {
   background-color: var(--dark-bg);
-  color: var(--text-dark);
+  color: var(--light);
 }
 
-.dark-mode a {
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
   color: var(--yellow);
 }
 
-.highlight, .bonus {
+.header {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-image {
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0,0,0,0.5);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+.section {
+  padding: 2rem;
+  margin: 2rem 0;
+  background: var(--light);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card {
   background-color: var(--blue);
   color: white;
-  padding: 2rem 1rem;
-  text-align: center;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 250px;
+  transition: transform 0.3s, background-color 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.highlight a,
-.bonus a {
-  display: inline-block;
-  margin-top: 1rem;
-  color: var(--yellow);
-  font-weight: bold;
-}
-
-.kontakt {
-  background: #eee;
-  padding: 2rem;
-  text-align: center;
-}
-
-.kontakt ul {
-  list-style: none;
-  padding: 0;
-}
-
-.kontakt li {
-  margin: 0.5rem 0;
-}
-
-/* Dark Mode Toggle Button */
-.dark-mode-toggle {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+.card:hover {
+  transform: translateY(-5px);
   background-color: var(--yellow);
+  color: black;
+}
+
+.dark-mode a { color: var(--yellow); }
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: var(--light);
+}
+
+.dark-mode .card:hover {
+  background-color: var(--yellow);
+  color: black;
+}
+
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--yellow);
+  color: black;
   border: none;
   border-radius: 50%;
   padding: 0.5rem 0.7rem;
-  cursor: pointer;
   font-size: 1.2rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+.footer {
+  background-color: var(--blue);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer a {
+  color: var(--yellow);
 }

@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.brand-color {
+    background-color: #768DF1;
+}
+
+.hero-section {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 400px;
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: #768DF1;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #768DF1;
+    border: none;
+}

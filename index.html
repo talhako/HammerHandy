@@ -5,107 +5,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hammer Handy Waidhofen</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
 
-  <!-- Dark Mode Schalter -->
-  <button id="darkModeToggle">🌙</button>
+  <!-- Dark Mode Toggle Button -->
+  <button id="darkModeToggle" class="dark-mode-toggle">🌙</button>
 
-  <!-- Startseite mit Logo und Hintergrundbild -->
-  <header>
+  <!-- Header mit Logo und Hintergrundbild -->
+  <header class="header">
     <div class="logo">
       <img src="logo.png" alt="Hammer Handy Logo" />
     </div>
-    <div class="background-image">
+    <div class="hero-image">
       <img src="background.jpg" alt="Hammer Handy Geschäft" />
+      <div class="hero-text">
+        <h1>Hammer Handy - Dein Smartphone-Profi</h1>
+        <p>Reparaturen & Top-Deals für dein Handy</p>
+      </div>
     </div>
   </header>
 
   <!-- Leistungen -->
-  <section>
+  <section class="section">
     <h2>Unsere Leistungen</h2>
     <ul>
-      <li>✔️ Handy Reparatur – schnell & günstig</li>
-      <li>✔️ Verkauf von Smartphones, Hüllen & Zubehör</li>
-      <li>✔️ Datenübertragung, Software, Beratung</li>
+      <li>✔️ Schnell & zuverlässige Handy Reparaturen</li>
+      <li>✔️ Verkauf von Smartphones und Zubehör</li>
+      <li>✔️ Beratung und Datenübertragung</li>
     </ul>
   </section>
 
-  <!-- Über Uns -->
-  <section>
+  <!-- Über uns -->
+  <section class="section">
     <h2>Über uns</h2>
     <p>
-      Hammer Handy ist dein professioneller Ansprechpartner für alles rund ums Handy. Seit über 5 Jahren reparieren wir zuverlässig und bieten Top-Produkte zum fairen Preis.
+      Hammer Handy ist dein zuverlässiger Ansprechpartner für Handy-Reparaturen in Waidhofen an der Ybbs. Seit 5 Jahren bieten wir schnelle und professionelle Services zu fairen Preisen an.
     </p>
     <p>
-      Wir sind auf dem <a href="https://www.reparaturfuehrer.at/profil/3537" target="_blank">Reparaturführer Österreich</a> gelistet – und stolz auf unsere regionale Qualität!
+      Besuche uns auch auf dem <a href="https://www.reparaturfuehrer.at/profil/3537" target="_blank">Reparaturführer Österreich</a>, um mehr zu erfahren!
     </p>
   </section>
 
-  <!-- Auszeichnung -->
-  <section>
+  <!-- Auszeichnung Top 8 -->
+  <section class="section">
     <h2>🏆 Auszeichnung: Top 8 in NÖ 2024</h2>
     <p>
-      Wir wurden 2024 von der NÖN unter die <strong>Top 8 Unternehmen</strong> in Niederösterreich gewählt! Danke für euer Vertrauen!
+      Wir sind stolz, 2024 von der NÖN unter die besten 8 Unternehmen in Niederösterreich gewählt worden zu sein. Vielen Dank für euer Vertrauen!
     </p>
-    <a href="https://www.noen.at/tipp/platz-8-ali-kocaman-452410899" target="_blank">🔗 Bericht auf noen.at lesen</a>
+    <a href="https://www.noen.at/tipp/platz-8-ali-kocaman-452410899" target="_blank" class="link">Bericht auf noen.at lesen</a>
   </section>
 
   <!-- Reparaturbonus -->
-  <section>
+  <section class="section">
     <h2>🛠️ Reparaturbonus bei uns!</h2>
     <p>
-      Bei Hammer Handy kannst du den <strong>offiziellen Reparaturbonus</strong> nutzen und bekommst bis zu <strong>50% der Reparaturkosten zurück!</strong>
+      Nutze den <strong>Reparaturbonus</strong> und erhalte bis zu <strong>50% der Reparaturkosten</strong> zurück! Damit möchten wir nachhaltige Reparaturen fördern und die Umwelt schonen.
     </p>
     <p>
-      Der Reparaturbonus ist ein Förderprogramm des Klimaschutzministeriums für nachhaltige Reparaturen. Seit dem 16. September 2024 ist der Reparaturbonus auch für Fahrräder einlösbar.
+      Der Reparaturbonus wird vom Klimaschutzministerium gefördert und ist für viele Reparaturen gültig, darunter auch Handys und Smartphones. Erhalte weitere Infos und beantrage deinen Bonus direkt auf der <a href="https://www.reparaturbonus.at/" target="_blank">offiziellen Seite</a>.
     </p>
-    <a href="https://www.reparaturbonus.at/" target="_blank">Mehr erfahren auf reparaturbonus.at</a>
   </section>
 
   <!-- Kontakt -->
-  <section>
+  <section class="section">
     <h2>Kontakt</h2>
-    <p><strong>Adresse:</strong> Waidhofen an der Ybbs</p>
+    <p><strong>Adresse:</strong> Hammer Handy, Waidhofen an der Ybbs</p>
     <p><strong>Telefon:</strong> <a href="tel:+436641234567">0664 1234567</a></p>
     <p><strong>WhatsApp:</strong> <a href="https://wa.me/436641234567" target="_blank">Jetzt schreiben</a></p>
     <p><strong>Facebook:</strong> <a href="https://www.facebook.com/hammerrhandy/?locale=de_DE" target="_blank">Hammer Handy auf Facebook</a></p>
     <p><strong>Instagram:</strong> <a href="https://www.instagram.com/hammer_handy/" target="_blank">@hammer_handy</a></p>
   </section>
 
-  <!-- Google Maps + Street View -->
-  <section>
+  <!-- Google Maps Integration -->
+  <section class="section">
     <h2>So findest du uns</h2>
-    <div style="margin-bottom: 15px;">
-      <iframe src="https://maps.google.com/maps?q=Hammer%20Handy%20Waidhofen&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="250" frameborder="0" style="border:0;"></iframe>
-    </div>
-    <div>
-      <iframe src="https://www.google.com/maps/embed?pb=!4v1681994886326!6m8!1m7!1sCAoSLEFGMVFpcE4zNGt4eEN0VnFfZlEwMWhuTlViSnZNaDZvb2loak9ycTJRMk5N!2m2!1d47.9590649!2d14.7720641!3f0!4f0!5f0.7820865974627469" width="100%" height="250" style="border:0;" allowfullscreen></iframe>
-    </div>
+    <iframe src="https://maps.google.com/maps?q=Hammer%20Handy%20Waidhofen&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="250" frameborder="0" style="border:0;"></iframe>
   </section>
 
   <!-- Kundenbewertungen -->
-  <section>
+  <section class="section">
     <h2>Kundenbewertungen</h2>
     <div id="reviews"></div>
   </section>
 
-  <!-- Kontaktformular -->
-  <section>
-    <h2>Schreib uns direkt</h2>
-    <form action="mailto:deine@email.at" method="post" enctype="text/plain">
-      <label>Name:<br><input type="text" name="name" required></label><br><br>
-      <label>Nachricht:<br><textarea name="message" rows="5" required></textarea></label><br><br>
-      <input type="submit" value="Senden">
-    </form>
-  </section>
-
-  <footer>
+  <footer class="footer">
     <p>&copy; 2025 Hammer Handy Waidhofen | <a href="https://www.reparaturbonus.at/" target="_blank">Reparaturbonus</a></p>
   </footer>
 
   <script src="js/scripts.js"></script>
+
   <script>
     // Dark Mode Toggle
     const darkModeToggle = document.getElementById('darkModeToggle');
@@ -113,18 +101,7 @@
       document.body.classList.toggle('dark-mode');
       darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
     });
+  </script>
 
-    // Google Bewertungen einbinden
-    const reviewsContainer = document.getElementById('reviews');
-    axios.get('https://maps.googleapis.com/maps/api/place/details/json', {
-      params: {
-        placeid: 'ChIJe6cQ2QZ8j0cR8pJ6J0yJ0Zg',
-        key: 'DEIN_GOOGLE_API_KEY'
-      }
-    })
-    .then(response => {
-      const reviews = response.data.result.reviews;
-      reviews.forEach(review => {
-        const
-::contentReference[oaicite:0]{index=0}
- 
+</body>
+</html>

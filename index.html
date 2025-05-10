@@ -1,112 +1,269 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Hammer Handy Waidhofen - Ihr Profi für Smartphone-Reparaturen und Top-Deals.">
-  <meta name="keywords" content="Handy Reparatur, Waidhofen, Smartphone, Top Deals, Reparaturbonus">
-  <title>Hammer Handy Waidhofen</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hammer Handy Waidhofen - Smartphone Reparatur</title>
+  <style>
+    :root {
+      --primary-blue: #2A5CAA;
+      --accent-yellow: #FFD700;
+      --dark-text: #333;
+      --light-bg: #F8F9FA;
+      --section-padding: 4rem 0;
+      --card-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      line-height: 1.6;
+      color: var(--dark-text);
+      background-color: var(--light-bg);
+    }
+
+    /* Dark Mode */
+    .dark-mode {
+      --dark-text: #fff;
+      --light-bg: #121212;
+      background-color: var(--light-bg);
+      color: var(--dark-text);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(135deg, var(--primary-blue), #1A3D6B);
+      color: white;
+      padding: 1rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-section {
+      position: relative;
+      height: 400px;
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 1;
+    }
+
+    .hero-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    /* Services Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: var(--section-padding);
+    }
+
+    .service-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: var(--card-shadow);
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Section Styling */
+    .section {
+      padding: var(--section-padding);
+    }
+
+    .section-title {
+      font-size: 2rem;
+      color: var(--primary-blue);
+      margin-bottom: 2rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 3px solid var(--accent-yellow);
+      display: inline-block;
+    }
+
+    /* Kontaktbereich */
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    /* Button Styles */
+    .cta-button {
+      background-color: var(--accent-yellow);
+      color: var(--dark-text);
+      padding: 1rem 2rem;
+      border-radius: 25px;
+      display: inline-block;
+      transition: transform 0.3s ease;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .cta-button:hover {
+      transform: scale(1.05);
+    }
+
+    /* Dark Mode Toggle */
+    .dark-mode-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--accent-yellow);
+      border: none;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    /* Google Maps */
+    .map-container {
+      margin-top: 2rem;
+      height: 400px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: var(--card-shadow);
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--primary-blue);
+      color: white;
+      margin-top: 4rem;
+    }
+  </style>
 </head>
 <body>
+  <button class="dark-mode-toggle" id="darkModeToggle">🌙</button>
 
-  <!-- Dark Mode Toggle Button -->
-  <button id="darkModeToggle" class="dark-mode-toggle">🌙</button>
-
-  <!-- Header mit Logo und Hintergrundbild -->
   <header class="header">
-    <div class="logo">
-      <img src="logo.png" alt="Hammer Handy Logo" />
-    </div>
-    <div class="hero-image">
-      <img src="background.jpg" alt="Hammer Handy Geschäft" />
-      <div class="hero-text">
-        <h1>Hammer Handy - Dein Smartphone-Profi</h1>
-        <p>Reparaturen & Top-Deals für dein Handy</p>
+    <div class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Hammer Handy Waidhofen</h1>
+          <p class="tagline">Ihr professioneller Smartphone-Service</p>
+          <a href="#contact" class="cta-button">Jetzt Termin buchen</a>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- Leistungen -->
-  <section class="section">
-    <h2>Unsere Leistungen</h2>
-    <ul>
-      <li>✔️ Schnell & zuverlässige Handy Reparaturen</li>
-      <li>✔️ Verkauf von Smartphones und Zubehör</li>
-      <li>✔️ Beratung und Datenübertragung</li>
-    </ul>
-  </section>
+  <main class="container">
+    <section class="section">
+      <h2 class="section-title">Unsere Leistungen</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>📱 Displayreparatur</h3>
+          <p>Professioneller Austausch von Displays und Touchscreens</p>
+        </div>
+        
+        <div class="service-card">
+          <h3>🔋 Akkuservice</h3>
+          <p>Batteriediagnose und fachgerechter Austausch</p>
+        </div>
+        
+        <div class="service-card">
+          <h3>💧 Wasserschadenbehandlung</h3>
+          <p>Spezialisierte Behandlung von Flüssigkeitsschäden</p>
+        </div>
 
-  <!-- Über uns -->
-  <section class="section">
-    <h2>Über uns</h2>
-    <p>
-      Hammer Handy ist dein zuverlässiger Ansprechpartner für Handy-Reparaturen in Waidhofen an der Ybbs. Seit 5 Jahren bieten wir schnelle und professionelle Services zu fairen Preisen an.
-    </p>
-    <p>
-      Besuche uns auch auf dem <a href="https://www.reparaturfuehrer.at/profil/3537" target="_blank">Reparaturführer Österreich</a>, um mehr zu erfahren!
-    </p>
-  </section>
+        <div class="service-card">
+          <h3>📶 Softwareprobleme</h3>
+          <p>Behebung von Systemfehlern und Software-Updates</p>
+        </div>
 
-  <!-- Auszeichnung Top 8 -->
-  <section class="section">
-    <h2>🏆 Auszeichnung: Top 8 in NÖ 2024</h2>
-    <p>
-      Wir sind stolz, 2024 von der NÖN unter die besten 8 Unternehmen in Niederösterreich gewählt worden zu sein. Vielen Dank für euer Vertrauen!
-    </p>
-    <a href="https://www.noen.at/tipp/platz-8-ali-kocaman-452410899" target="_blank" class="link">Bericht auf noen.at lesen</a>
-  </section>
+        <div class="service-card">
+          <h3>🔒 Datensicherung</h3>
+          <p>Professionelle Datenrettung und -sicherung</p>
+        </div>
 
-  <!-- Reparaturbonus -->
-  <section class="section">
-    <h2>🛠️ Reparaturbonus bei uns!</h2>
-    <p>
-      Nutze den <strong>Reparaturbonus</strong> und erhalte bis zu <strong>50% der Reparaturkosten</strong> zurück! Damit möchten wir nachhaltige Reparaturen fördern und die Umwelt schonen.
-    </p>
-    <p>
-      Der Reparaturbonus wird vom Klimaschutzministerium gefördert und ist für viele Reparaturen gültig, darunter auch Handys und Smartphones. Erhalte weitere Infos und beantrage deinen Bonus direkt auf der <a href="https://www.reparaturbonus.at/" target="_blank">offiziellen Seite</a>.
-    </p>
-  </section>
+        <div class="service-card">
+          <h3>🛡️ Schutzausrüstung</h3>
+          <p>Individuelle Schutzlösungen für Ihr Gerät</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- Kontakt -->
-  <section class="section" id="contact">
-    <h2>Kontakt</h2>
-    <form id="contactForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
+    <section class="section">
+      <h2 class="section-title">Über uns</h2>
+      <div class="about-content">
+        <p>Seit 2019 Ihr zuverlässiger Partner für Smartphone-Reparaturen in Waidhofen an der Ybbs.</p>
+        <div class="award-badge">🏆 Top 8 NÖ 2024</div>
+        <a href="https://www.reparaturfuehrer.at" target="_blank" class="cta-button">Bewertungen ansehen</a>
+      </div>
+    </section>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+    <section class="section" id="contact">
+      <h2 class="section-title">Kontakt & Anfahrt</h2>
+      <div class="contact-info">
+        <div>
+          <h3>📌 Adresse</h3>
+          <p>
+            Hammer Handy<br>
+            Unterer Stadtpl. 23<br>
+            3340 Waidhofen an der Ybbs<br>
+<a href="https://maps.app.goo.gl/ux57X5o15kHTswG86" target="_blank" class="cta-button">Google maps</a>
+            📞 <a href="tel:+436607352777">06607352777</a>
+          </p>
+        </div>
+        <div>
+          <h3>⏰ Öffnungszeiten</h3>
+          <p>
+            Mo-Fr: 09:00 - 18:00 Uhr<br>
+            Sa: 09:00 - 12:00 Uhr
+          </p>
+        </div>
+        <div>
+          <h3>📱 Social Media</h3>
+          <p>
+            <a href="https://facebook.com" target="_blank">Facebook</a><br>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+          </p>
+        </div>
+      </div>
 
-      <label for="message">Nachricht:</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
-
-      <button type="submit">Absenden</button>
-    </form>
-    <p><strong>Adresse:</strong> Hammer Handy, Waidhofen an der Ybbs</p>
-    <p><strong>Telefon:</strong> <a href="tel:+436641234567">0664 1234567</a></p>
-    <p><strong>WhatsApp:</strong> <a href="https://wa.me/436641234567" target="_blank">Jetzt schreiben</a></p>
-    <p><strong>Facebook:</strong> <a href="https://www.facebook.com/hammerrhandy/?locale=de_DE" target="_blank">Hammer Handy auf Facebook</a></p>
-    <p><strong>Instagram:</strong> <a href="https://www.instagram.com/hammer_handy/" target="_blank">@hammer_handy</a></p>
-  </section>
-
-  <!-- Google Maps Integration -->
-  <section class="section">
-    <h2>So findest du uns</h2>
-    <iframe src="https://maps.google.com/maps?q=Hammer%20Handy%20Waidhofen&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="250" frameborder="0" style="border:0;"></iframe>
-  </section>
-
-  <!-- Kundenbewertungen -->
-  <section class="section">
-    <h2>Kundenbewertungen</h2>
-    <div id="reviews"></div>
-  </section>
+      <div class="map-container">
+        <iframe 
+          src="https://maps.google.com/maps?q=Hammer%20Handy%20Waidhofen&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
-    <p>&copy; 2025 Hammer Handy Waidhofen | <a href="https://www.reparaturbonus.at/" target="_blank">Reparaturbonus</a></p>
+    <p>&copy; 2024 Hammer Handy Waidhofen | <a href="https://www.reparaturbonus.at/" target="_blank">Reparaturbonus Info</a></p>
   </footer>
-
-  <script src="js/scripts.js"></script>
 
   <script>
     // Dark Mode Toggle
@@ -115,13 +272,6 @@
       document.body.classList.toggle('dark-mode');
       darkModeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
     });
-
-    // Contact Form Submission
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-      event.preventDefault();
-      alert('Vielen Dank für Ihre Nachricht! Wir werden uns bald bei Ihnen melden.');
-    });
   </script>
-
 </body>
 </html>

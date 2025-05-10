@@ -1,4 +1,5 @@
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    alert('Vielen Dank für Ihre Nachricht! Wir werden uns bald bei Ihnen melden.');
+const toggleBtn = document.getElementById('darkModeToggle');
+toggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
 });

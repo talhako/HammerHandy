@@ -1,84 +1,66 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hammer Handy - Mobilfunkexperte</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hammer Handy Waidhofen</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Header -->
-    <header class="brand-color p-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <h1 class="h3 mb-0 text-white">Hammer Handy</h1>
-            <nav>
-                <a href="#services" class="text-white me-3">Services</a>
-                <a href="#contact" class="text-white">Kontakt</a>
-            </nav>
-        </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section text-center text-white d-flex align-items-center">
-        <div class="container">
-            <h1>Schnelle Handy-Reparaturen</h1>
-            <p>Ihr Partner für Mobilfunk in Waidhofen/Ybbs</p>
-            <a href="#contact" class="btn btn-light btn-lg">Kontaktieren Sie uns</a>
-        </div>
-    </section>
+  <button id="darkModeToggle" class="dark-mode-toggle">🌙</button>
 
-    <!-- Services Section -->
-    <section id="services" class="py-5">
-        <div class="container text-center">
-            <h2>Unsere Dienstleistungen</h2>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div class="service-icon">📱</div>
-                    <h4>Display Reparatur</h4>
-                    <p>Reparieren Sie Ihr defektes Display schnell und zuverlässig.</p>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-icon">🔋</div>
-                    <h4>Akku Austausch</h4>
-                    <p>Wir tauschen defekte Akkus in kürzester Zeit aus.</p>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-icon">⚙️</div>
-                    <h4>Software-Lösungen</h4>
-                    <p>Probleme mit der Software? Wir helfen Ihnen weiter!</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <header class="header">
+    <div class="logo"><img src="logo.png" alt="Hammer Handy Logo" /></div>
+    <div class="hero-image">
+      <img src="background.jpg" alt="Hammer Handy Geschäft" />
+      <div class="hero-text">
+        <h1>Hammer Handy – Dein Smartphone-Profi</h1>
+        <p>Reparaturen & Top-Deals für dein Handy</p>
+      </div>
+    </div>
+  </header>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center">Kontaktieren Sie uns</h2>
-            <form class="mt-4" id="contactForm">
-                <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Ihr Name" required>
-                </div>
-                <div class="mb-3">
-                    <input type="email" class="form-control" placeholder="Ihre E-Mail" required>
-                </div>
-                <div class="mb-3">
-                    <textarea class="form-control" rows="4" placeholder="Ihre Nachricht" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Senden</button>
-            </form>
-        </div>
-    </section>
+  <section class="leistungen section">
+    <h2>Unsere Leistungen</h2>
+    <div class="grid">
+      <div class="card">✔️ Reparaturen</div>
+      <div class="card">📦 Zubehör</div>
+      <div class="card">📲 Datenservice</div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer text-center py-3 brand-color">
-        <div class="container">
-            <p class="mb-0 text-white">© 2025 Hammer Handy. Alle Rechte vorbehalten.</p>
-        </div>
-    </footer>
+  <section class="section">
+    <h2>🏆 Top 8 in Niederösterreich</h2>
+    <p>Wir gehören laut NÖN 2024 zu den besten 8 Unternehmen in NÖ.</p>
+    <a class="link" href="https://www.noen.at/tipp/platz-8-ali-kocaman-452410899" target="_blank">Mehr erfahren</a>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+  <section class="section">
+    <h2>🛠️ Reparaturbonus</h2>
+    <p>Bis zu 50 % der Reparaturkosten werden dir zurückerstattet – gefördert vom Klimaschutzministerium.</p>
+    <a class="link" href="https://www.reparaturbonus.at/" target="_blank">Reparaturbonus Infos</a>
+  </section>
+
+  <section class="section">
+    <h2>Kontakt</h2>
+    <p><strong>Adresse:</strong> Waidhofen an der Ybbs</p>
+    <p><strong>Telefon:</strong> <a href="tel:+436641234567">0664 1234567</a></p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/436641234567" target="_blank">Jetzt schreiben</a></p>
+    <p><a href="https://www.facebook.com/hammerrhandy/?locale=de_DE" target="_blank">📘 Facebook</a> | 
+       <a href="https://www.instagram.com/hammer_handy/" target="_blank">📸 Instagram</a></p>
+  </section>
+
+  <section class="section">
+    <h2>Standort</h2>
+    <iframe src="https://maps.google.com/maps?q=Hammer%20Handy%20Waidhofen&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="250" frameborder="0" style="border:0;"></iframe>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Hammer Handy | <a href="https://www.reparaturbonus.at/">Reparaturbonus</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+
 </body>
 </html>

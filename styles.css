@@ -1,29 +1,128 @@
+:root {
+  --blue: #0059b3;
+  --yellow: #ffd700;
+  --bg: #f8f8f8;
+  --text: #333;
+  --dark-bg: #121212;
+  --light: #ffffff;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: all 0.3s ease;
 }
 
-.brand-color {
-    background-color: #768DF1;
+.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--light);
 }
 
-.hero-section {
-    background: url('hero-image.jpg') no-repeat center center/cover;
-    height: 400px;
+a {
+  color: var(--blue);
+  text-decoration: none;
 }
 
-.service-icon {
-    font-size: 3rem;
-    color: #768DF1;
+a:hover {
+  text-decoration: underline;
+  color: var(--yellow);
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-image {
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0,0,0,0.5);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+.section {
+  padding: 2rem;
+  margin: 2rem 0;
+  background: var(--light);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: var(--blue);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 250px;
+  transition: transform 0.3s, background-color 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: var(--yellow);
+  color: black;
+}
+
+.dark-mode a { color: var(--yellow); }
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: var(--light);
+}
+
+.dark-mode .card:hover {
+  background-color: var(--yellow);
+  color: black;
+}
+
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--yellow);
+  color: black;
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem 0.7rem;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
 }
 
 .footer {
-    background-color: #333;
-    color: white;
+  background-color: var(--blue);
+  color: white;
+  padding: 1rem;
+  text-align: center;
 }
 
-.btn-primary {
-    background-color: #768DF1;
-    border: none;
+.footer a {
+  color: var(--yellow);
 }

@@ -1,84 +1,250 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hammer Handy - Mobilfunkexperte</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hammer Handy — Handy, Laptop &amp; E-Scooter Reparatur in Waidhofen an der Ybbs</title>
+<meta name="description" content="Hammer Handy in Waidhofen an der Ybbs: Reparatur, An- und Verkauf von Smartphones, Laptops und E-Scootern. Reparaturbonus-Partner. Unterer Stadtplatz 23.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="images/logo.jpg">
 </head>
 <body>
-    <!-- Header -->
-    <header class="brand-color p-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <h1 class="h3 mb-0 text-white">Hammer Handy</h1>
-            <nav>
-                <a href="#services" class="text-white me-3">Services</a>
-                <a href="#contact" class="text-white">Kontakt</a>
-            </nav>
-        </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section text-center text-white d-flex align-items-center">
-        <div class="container">
-            <h1>Schnelle Handy-Reparaturen</h1>
-            <p>Ihr Partner für Mobilfunk in Waidhofen/Ybbs</p>
-            <a href="#contact" class="btn btn-light btn-lg">Kontaktieren Sie uns</a>
-        </div>
-    </section>
+<header class="site-header" id="siteHeader">
+  <div class="wrap">
+    <a href="#top" class="brand">
+      <img src="images/logo.jpg" alt="Hammer Handy Logo">
+    </a>
+    <nav class="main-nav">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#ueber-uns">Über uns</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#bewertungen">Bewertungen</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="tel:+436607352777" class="btn btn-primary">Anrufen</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
 
-    <!-- Services Section -->
-    <section id="services" class="py-5">
-        <div class="container text-center">
-            <h2>Unsere Dienstleistungen</h2>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <div class="service-icon">📱</div>
-                    <h4>Display Reparatur</h4>
-                    <p>Reparieren Sie Ihr defektes Display schnell und zuverlässig.</p>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-icon">🔋</div>
-                    <h4>Akku Austausch</h4>
-                    <p>Wir tauschen defekte Akkus in kürzester Zeit aus.</p>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-icon">⚙️</div>
-                    <h4>Software-Lösungen</h4>
-                    <p>Probleme mit der Software? Wir helfen Ihnen weiter!</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<main id="top">
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center">Kontaktieren Sie uns</h2>
-            <form class="mt-4" id="contactForm">
-                <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Ihr Name" required>
-                </div>
-                <div class="mb-3">
-                    <input type="email" class="form-control" placeholder="Ihre E-Mail" required>
-                </div>
-                <div class="mb-3">
-                    <textarea class="form-control" rows="4" placeholder="Ihre Nachricht" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Senden</button>
-            </form>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="signal"><span></span><span></span><span></span><span></span></span> Handyshop im Zentrum von Waidhofen an der Ybbs</p>
+        <h1 class="hero-title">
+          <span class="line-red">HAMMER</span><span class="line-white">HANDY</span>
+        </h1>
+        <p class="hero-sub">hammerschnell<span class="sep">/</span>hammerzuverlässig<span class="sep">/</span>hammerpreis</p>
+        <div class="hero-ctas">
+          <a href="#kontakt" class="btn btn-primary">Kostenvoranschlag anfragen</a>
+          <a href="tel:+436607352777" class="btn btn-ghost-light">📞 +43 660 7352777</a>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer text-center py-3 brand-color">
-        <div class="container">
-            <p class="mb-0 text-white">© 2025 Hammer Handy. Alle Rechte vorbehalten.</p>
+        <div class="hero-badges">
+          <div class="hero-badge"><b>Platz 8</b><span>Top-Unternehmen NÖ, NÖN 2024</span></div>
+          <div class="hero-badge"><b>5,0 ★</b><span>Google &amp; Cylex Bewertungen</span></div>
+          <div class="hero-badge"><b>A1 · Magenta</b><span>Offizieller Partnershop</span></div>
         </div>
-    </footer>
+      </div>
+      <div class="hero-media">
+        <img src="images/shop-front.jpg" alt="Hammer Handy Geschäft am Unteren Stadtplatz in Waidhofen an der Ybbs">
+      </div>
+    </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+  <!-- LEISTUNGEN -->
+  <section id="leistungen">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="signal"><span></span><span></span><span></span><span></span></span> Leistungen</p>
+        <h2>Reparatur, An- und Verkauf — alles aus einer Hand.</h2>
+        <p>Unser Schwerpunkt ist das Handy. Aber wir kümmern uns auch um deinen Laptop und deinen E-Scooter.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card featured reveal">
+          <span class="tag">Unsere Spezialität</span>
+          <span class="service-num">01 / Handy</span>
+          <h3>Smartphone</h3>
+          <p class="steel-text">Displaytausch, Akkutausch, Wasserschaden, Software-Probleme — schnell und fair repariert. Dazu An- und Verkauf von neuen und gebrauchten Geräten sowie Zubehör.</p>
+          <ul>
+            <li><span class="signal"><span></span><span></span><span></span><span></span></span> Display- &amp; Akkutausch</li>
+            <li><span class="signal"><span></span><span></span><span></span><span></span></span> Wasserschaden-Reparatur</li>
+            <li><span class="signal"><span></span><span></span><span></span><span></span></span> Datenrettung &amp; -transfer</li>
+            <li><span class="signal"><span></span><span></span><span></span><span></span></span> An- &amp; Verkauf, Zubehör</li>
+            <li><span class="signal"><span></span><span></span><span></span><span></span></span> Reparaturbonus-Partner</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <span class="service-num">02 / Laptop</span>
+          <h3>Laptop</h3>
+          <p class="steel-text">Kauf, Verkauf und Reparatur von Laptops — für Zuhause, Schule oder Büro.</p>
+          <ul>
+            <li><span class="signal"><span></span><span></span><span></span><span></span></span> Reparatur &amp; Wartung</li>
+            <li><span class="signal"><span></span><span></span><span></span><span></span></span> An- &amp; Verkauf</li>
+            <li><span class="signal"><span></span><span></span><span></span><span></span></span> Beratung vor Ort</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <span class="service-num">03 / E-Scooter</span>
+          <h3>E-Scooter</h3>
+          <p class="steel-text">Reparatur, Kauf und Verkauf rund um deinen E-Scooter.</p>
+          <ul>
+            <li><span class="signal"><span></span><span></span><span></span><span></span></span> Reparatur &amp; Service</li>
+            <li><span class="signal"><span></span><span></span><span></span><span></span></span> An- &amp; Verkauf</li>
+            <li><span class="signal"><span></span><span></span><span></span><span></span></span> Kostenvoranschlag gratis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÜBER UNS -->
+  <section id="ueber-uns" class="bg-concrete">
+    <div class="wrap about-grid">
+      <div class="about-copy reveal">
+        <p class="eyebrow"><span class="signal"><span></span><span></span><span></span><span></span></span> Über uns</p>
+        <h2>Euer Handy-Experte im Zentrum von Waidhofen</h2>
+        <p>Liebe Kundinnen und Kunden, wir sind ein Handyshop im Zentrum von Waidhofen an der Ybbs. Wir haben täglich von Montag bis Samstag für Sie geöffnet. Wir kaufen und verkaufen Smartphones, Tablets und Laptops.</p>
+        <p>Egal ob Sie Ihr Smartphone reparieren lassen wollen, unsere Hilfe bei diversen Vorgängen (Datensicherung, Transfer, etc.) benötigen oder neues Zubehör für Ihr Smartphone suchen — wir helfen Ihnen gerne weiter. Bei Fragen können Sie uns auch jederzeit telefonisch erreichen. Wir freuen uns auf Sie!</p>
+
+        <div class="about-stats">
+          <div class="stat"><b>Mo–Sa</b><span>täglich geöffnet</span></div>
+          <div class="stat"><b>Platz 8</b><span>NÖ Top-Unternehmen 2024</span></div>
+        </div>
+
+        <div class="award-strip">
+          <span class="signal"><span></span><span></span><span></span><span></span></span>
+          <p>Ausgezeichnet als <strong>Platz 8</strong> unter den Top-Unternehmen Niederösterreichs — <a href="https://www.noen.at/tipp/platz-8-ali-kocaman-452410899" target="_blank" rel="noopener">Artikel auf NÖN.at lesen</a>.</p>
+        </div>
+      </div>
+      <div class="about-media reveal">
+        <img src="images/shop-interior.jpg" alt="Innenansicht des Hammer Handy Geschäfts mit Zubehör-Regalen">
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIE -->
+  <section id="galerie">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="signal"><span></span><span></span><span></span><span></span></span> Galerie</p>
+        <h2>Ein Blick in unser Geschäft</h2>
+      </div>
+      <div class="gallery-grid">
+        <figure class="reveal">
+          <img src="images/shop-front.jpg" alt="Eingang Hammer Handy, Unterer Stadtplatz 23, Waidhofen an der Ybbs">
+        </figure>
+        <figure class="reveal">
+          <img src="images/shop-interior.jpg" alt="Verkaufsraum mit Zubehör für Samsung, Apple, Xiaomi und Huawei">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEWERTUNGEN -->
+  <section id="bewertungen" class="bg-ink">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="signal on-dark"><span></span><span></span><span></span><span></span></span> Bewertungen</p>
+        <h2>Das sagen unsere Kund:innen</h2>
+        <p class="steel-text">5,0 von 5 Sternen auf Google, Cylex &amp; Co.</p>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>„Sehr kompetent. Sehr freundlich. Probleme mit dem Handy werden schnellstens gelöst.“</p>
+          <cite>— Sabine S., Google-Bewertung</cite>
+        </div>
+        <div class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>„Sehr guter Service und sehr freundlich, gute Kundenbetreuung.“</p>
+          <cite>— Tanja F., Google-Bewertung</cite>
+        </div>
+        <div class="review-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>„Super Service. Schnelle Abwicklung der Probleme … danke!“</p>
+          <cite>— Google-Bewertung</cite>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section id="kontakt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow"><span class="signal"><span></span><span></span><span></span><span></span></span> Kontakt</p>
+        <h2>Vorbeikommen, anrufen oder schreiben</h2>
+        <p>Wir freuen uns auf euch am Unteren Stadtplatz 23 in Waidhofen an der Ybbs.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div>
+          <div class="contact-card reveal">
+            <div class="info-row"><span class="label">Adresse</span><a href="https://maps.google.com/?q=Unterer+Stadtplatz+23,+3340+Waidhofen+an+der+Ybbs" target="_blank" rel="noopener">Unterer Stadtplatz 23, 3340 Waidhofen/Ybbs</a></div>
+            <div class="info-row"><span class="label">Telefon</span><a href="tel:+436607352777">+43 660 7352777</a></div>
+            <div class="info-row"><span class="label">E-Mail</span><a href="mailto:office@hammer-handy.at">office@hammer-handy.at</a></div>
+          </div>
+
+          <table class="hours-table reveal" style="margin-top:20px;">
+            <tr><td>Montag</td><td>09:00–13:00 · 14:00–18:00</td></tr>
+            <tr><td>Dienstag</td><td>09:00–13:00 · 14:00–18:00</td></tr>
+            <tr><td>Mittwoch</td><td>09:00–13:00 · 14:00–18:00</td></tr>
+            <tr><td>Donnerstag</td><td>09:00–13:00 · 14:00–18:00</td></tr>
+            <tr><td>Freitag</td><td>09:00–13:00 · 14:00–18:00</td></tr>
+            <tr><td>Samstag</td><td>09:00–13:00</td></tr>
+            <tr class="closed"><td>Sonntag</td><td>Geschlossen</td></tr>
+          </table>
+
+          <div class="social-row reveal">
+            <a href="https://www.facebook.com/hammerrhandy/" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M13 22V13.5H16L16.5 10H13V8C13 7 13.3 6.3 14.8 6.3H16.6V3.1C16 3 15 2.9 13.9 2.9C11.4 2.9 9.7 4.4 9.7 7.2V10H7V13.5H9.7V22H13Z" fill="currentColor"/></svg>
+            </a>
+            <a href="https://www.instagram.com/hammer_handy/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <iframe class="map-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Unterer+Stadtplatz+23,+3340+Waidhofen+an+der+Ybbs&output=embed">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand"><img src="images/logo.jpg" alt="Hammer Handy"> Hammer Handy</div>
+      <div class="footer-links">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Hammer Handy, Waidhofen an der Ybbs</span>
+      <span>Unterer Stadtplatz 23 · +43 660 7352777</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
